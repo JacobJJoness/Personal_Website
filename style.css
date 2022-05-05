@@ -1,0 +1,79 @@
+    
+    
+/* declines all defaulted padding, and margins needs an override though 
+    * {
+        margin: 0;
+        padding: 0; 
+    }
+*/
+  .custom-button{
+    color:white;
+    background-color: rgb(24, 23, 23);
+    cursor: pointer;
+    
+    border-radius:5px;
+    padding-left: 5;
+    padding-right: 5;
+    padding-top: 2;
+    padding-bottom: 2;
+    border-color: red;
+  }
+ 
+
+  .vaporwave-button{
+    margin-left: 50px;
+    margin-top:3px;
+    vertical-align: top;
+    font-family: "Serif";
+    color:rgb(228, 91, 255);
+    background-color: rgb(39, 38, 38);
+    cursor: pointer;
+    border-width: 1px;
+    border-radius:8px;
+    padding-right: 17;
+    padding-top: 20;
+  
+    border-color: rgb(35, 189, 163);
+    font-weight:bold;
+    transition: .15s;
+    
+  }
+
+  .vaporwave-button:hover{
+    background-color:rgb(61, 59, 59);
+    box-shadow: 3px 4px 4px rgba(35, 189, 163, 0.6)
+    
+  }
+  .vaporwave-button:active{
+    background-color:rgb(90, 88, 88);
+    box-shadow: 3px 4px 4px rgba(228, 91, 255, 0.6)
+  }
+
+  .title-text{
+    font-size:35px;
+    text-align: center;
+    color: rgb(35, 189, 163);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:rgb(22, 8, 20);
+    font-weight: 300;
+    font-style: italic;
+    font-weight: "bold";
+    border-style: outset ;
+    
+    border-top-color: rgb(228, 100, 255);
+    border-bottom-color: rgb(228, 50, 255);
+    
+  }
+  .text-style{
+    color: rgb(35, 189, 163);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width:400px;
+    
+  }
+
+
+.wrapper{
+    margin:0 auto;
+    width: 1000px;
+}
+
