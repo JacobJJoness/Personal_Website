@@ -1,41 +1,29 @@
     
     
-/* declines all defaulted padding, and margins needs an override though 
+/* declines all defaulted padding, and margins needs an override though*/ 
     * {
         margin: 0;
         padding: 0; 
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
     }
-*/
-  .custom-button{
-    color:white;
-    background-color: rgb(24, 23, 23);
-    cursor: pointer;
-    
-    border-radius:5px;
-    padding-left: 5;
-    padding-right: 5;
-    padding-top: 2;
-    padding-bottom: 2;
-    border-color: red;
-  }
- 
+
 
   .vaporwave-button{
-    margin-left: 50px;
-    margin-top:3px;
+    padding: 20px 30px 20px 30px ;
+    margin-left: 150px;
+    font-size:18;
     vertical-align: top;
-    font-family: "Serif";
+    font-family:Arial, Helvetica, sans-serif;
     color:rgb(228, 91, 255);
     background-color: rgb(39, 38, 38);
     cursor: pointer;
     border-width: 1px;
     border-radius:8px;
-    padding-right: 17;
-    padding-top: 20;
-  
     border-color: rgb(35, 189, 163);
     font-weight:bold;
-    transition: .15s;
+    transition: .15s; 
     
   }
 
@@ -49,31 +37,82 @@
     box-shadow: 3px 4px 4px rgba(228, 91, 255, 0.6)
   }
 
+
+  nav{
+    font-family:arial;
+    background-color: rgb(39, 38, 38) ;
+    height: 80px;
+  }
+
+  label.logo{
+    color:rgb(35, 189, 163);
+    font-size:45px;
+    line-height: 80px;
+    padding: 0 100px;
+  }
+
+  nav ul{
+    float:right;
+    margin-right: 20px;
+  }
+
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    
+    background-color:rgb(39, 38, 38);
+    color: rgb(228, 91, 255);
+    font-size:32px;
+    padding: 4px 6px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: .15s;
+  }
+
+  a:hover{
+    background-color:rgb(22, 22, 22);
+    color:rgb(30, 206, 176);
+    box-shadow: 6px 8px 8px rgba(228, 91, 255, 0.6)
+  }
+  a:active{
+    background-color:rgb(14, 14, 14);
+    color:rgb(17, 253, 214);
+    box-shadow: 6px 8px 8px rgba(35, 189, 163, 0.6)
+  }
+  a.active{
+    box-shadow: 6px 8px 8px rgba(228, 91, 255, .6);
+  }
+
   .title-text{
     font-size:35px;
     text-align: center;
     color: rgb(35, 189, 163);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     background-color:rgb(22, 8, 20);
     font-weight: 300;
     font-style: italic;
     font-weight: "bold";
     border-style: outset ;
-    
     border-top-color: rgb(228, 100, 255);
-    border-bottom-color: rgb(228, 50, 255);
-    
+    border-bottom-color: rgb(228, 50, 255);  
   }
+
   .text-style{
-    color: rgb(35, 189, 163);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    width:400px;
+    color: rgb(36, 189, 163);
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: "center";
+    max-width: 500px;
     
   }
 
+    
 
-.wrapper{
-    margin:0 auto;
-    width: 1000px;
+
+
+.main-image-style{
+  height:400px;
+  width:100%;
 }
-
