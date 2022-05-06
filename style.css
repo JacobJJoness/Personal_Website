@@ -93,8 +93,8 @@
     text-align: center;
     color: rgb(35, 189, 163);
     font-family:'Lobster';
-    background-color:rgb(6, 6, 6);
-
+    background-color:rgb(11, 17, 17);
+    margin-top:4px;
     font-weight: 300;
     font-style: italic;
     font-weight: "bold";
@@ -117,6 +117,7 @@
 
 .main-image-div{ 
   position: relative;
+  background-color:rgb(36, 189, 163) ;
 }
 
 
@@ -133,7 +134,7 @@
 }
 
 .main-image-style{
-  opacity:0.85;
+  opacity:0.91;
   height:200px;
   width:100%;
 }
@@ -155,18 +156,24 @@
 .download-style:active{
   background-color:rgb(14, 14, 14);
   color: rgb(228, 100, 255);
-  box-shadow: 6px 8px 8px rgba(82, 255, 226, 0.6)
+  box-shadow: 6px 8px 8px rgba(82, 255, 226, 0.6);
 }
 
 .about-me-image{
   position:relative;
-  width:30%;
-  height: 400px;
+ 
+
+  width:100%;
+  max-width:400px;
+  height: 387px;
 }
 
 .about-me-div{
+  margin-top: 2px;
   position:relative;
   width:100%;
+  
+ 
   background-color:rgb(19, 18, 18);
   height: 450px;
 }
@@ -175,7 +182,17 @@
   position: absolute;
   color:rgb(35, 189, 163);
   left: 35%;
+  width: 55%;
   top:12%;
   color:rgb(35, 189, 163);
   height: 450px;
+}
+
+.image-box{
+  position:relative;
+  border: 7px outset rgb(35, 189, 163);
+  border-radius: 4px;
+  width:35%;
+  max-width:400px;
+  height: 400px;
 }
