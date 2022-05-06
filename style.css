@@ -45,6 +45,7 @@
   }
 
   label.logo{
+    font-family: 'Lobster';
     color:rgb(35, 189, 163);
     font-size:45px;
     line-height: 80px;
@@ -62,9 +63,9 @@
     margin: 0 5px;
   }
   nav ul li a{
-    
+    font-family: 'Lobster';
     background-color:rgb(39, 38, 38);
-    color: rgb(228, 91, 255);
+    color:rgb(30, 206, 176);
     font-size:32px;
     padding: 4px 6px;
     border-radius: 5px;
@@ -74,12 +75,13 @@
 
   a:hover{
     background-color:rgb(22, 22, 22);
-    color:rgb(30, 206, 176);
+    color: rgb(228, 91, 255);
+    
     box-shadow: 6px 8px 8px rgba(228, 91, 255, 0.6)
   }
   a:active{
     background-color:rgb(14, 14, 14);
-    color:rgb(17, 253, 214);
+    color: rgb(228, 100, 255);
     box-shadow: 6px 8px 8px rgba(35, 189, 163, 0.6)
   }
   a.active{
@@ -90,8 +92,9 @@
     font-size:35px;
     text-align: center;
     color: rgb(35, 189, 163);
-    font-family:Arial, Helvetica, sans-serif;
-    background-color:rgb(22, 8, 20);
+    font-family:'Lobster';
+    background-color:rgb(6, 6, 6);
+
     font-weight: 300;
     font-style: italic;
     font-weight: "bold";
@@ -102,8 +105,9 @@
 
   .text-style{
     color: rgb(36, 189, 163);
-    font-family:Arial, Helvetica, sans-serif;
-    text-align: "center";
+    margin-left: 25%;
+    font-family:"Times New Roman";
+    text-align:center;
     max-width: 500px;
     
   }
@@ -111,8 +115,67 @@
     
 
 
+.main-image-div{ 
+  position: relative;
+}
+
+
+.main-image-text{
+    text-decoration: underline;
+  
+    text-decoration-color: rgba(228, 100, 255, .8);
+    color:rgb(35, 189, 163);
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    font-size: 70px;
+    font-family: 'Lobster';
+}
 
 .main-image-style{
-  height:400px;
+  opacity:0.85;
+  height:200px;
   width:100%;
+}
+
+.download-style{
+  text-align:center;
+  color: rgb(228, 100, 255);
+  font-weight: bold;
+}
+
+.download-style:hover{
+  background-color:rgb(22, 22, 22);
+  color: rgb(228, 91, 255);
+  
+  box-shadow: 6px 8px 8px rgba(35, 189, 163, 0.6)
+}
+
+
+.download-style:active{
+  background-color:rgb(14, 14, 14);
+  color: rgb(228, 100, 255);
+  box-shadow: 6px 8px 8px rgba(82, 255, 226, 0.6)
+}
+
+.about-me-image{
+  position:relative;
+  width:30%;
+  height: 400px;
+}
+
+.about-me-div{
+  position:relative;
+  width:100%;
+  background-color:rgb(19, 18, 18);
+  height: 450px;
+}
+
+.about-me-text{
+  position: absolute;
+  color:rgb(35, 189, 163);
+  left: 35%;
+  top:12%;
+  color:rgb(35, 189, 163);
+  height: 450px;
 }
