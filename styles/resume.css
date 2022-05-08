@@ -1,0 +1,46 @@
+.download-text{
+    text-align: center;
+    font-weight: bold;
+    padding:10px;
+    width:100%;
+    font-size: 18px;
+  }
+  .download-style{
+    color: rgb(228, 100, 255);
+    background-color:rgb(49, 49, 49); 
+    padding:5px;
+    border: 2px outset rgb(35, 189, 163);
+    border-radius: 5px;
+  }
+  
+  .download-style:hover{
+    background-color:rgb(22, 22, 22);
+    color: rgb(228, 91, 255);
+    box-shadow: 6px 8px 8px rgba(35, 189, 163, 0.6)
+  }
+  
+  
+  .download-style:active{
+    background-color:rgb(14, 14, 14);
+    color: rgb(228, 100, 255);
+    box-shadow: 6px 8px 8px rgba(82, 255, 226, 0.6);
+  }
+
+  .resume-div{
+    position:relative;
+    align-items: center;
+    margin-left:10%;
+    margin-right:10%;
+    width:80%;
+    background-color:rgb(228, 100, 255) ;
+    border: 7px outset rgb(35, 189, 163);
+  
+  }
+  
+  .resume-img{
+    margin-left:4px;
+    margin-top:4px;
+    color:rgb(35, 189, 163);
+    width: 99.2%;
+    
+  }

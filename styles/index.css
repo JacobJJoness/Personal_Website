@@ -1,0 +1,45 @@
+    
+    
+/* declines all defaulted padding, and margins needs an override though*/ 
+
+.about-me-image{
+  position:relative;
+ 
+
+  width:100%;
+  max-width:400px;
+  height: 387px;
+}
+
+.about-me-div{
+  margin-top: 2px;
+  position:relative;
+  width:100%;
+  
+ 
+  background-color:rgb(19, 18, 18);
+  height: 450px;
+}
+
+.about-me-text{
+  position: absolute;
+  font-size: 25px;
+  color:rgb(35, 189, 163);
+  left: 35%;
+  width: 55%;
+  top:12%;
+  color:rgb(35, 189, 163);
+  height: 450px;
+}
+
+.image-box{
+  position:relative;
+  border: 7px outset rgb(35, 189, 163);
+  border-radius: 4px;
+  width:35%;
+  max-width:400px;
+  height: 400px;
+}
+
+
+
