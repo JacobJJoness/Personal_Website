@@ -43,3 +43,58 @@
 
 
 
+
+/* attempt at appearing and disappearing qoutes */
+
+.rotating-qoutes{
+  display:flex;
+  margin: 0;
+  padding: 0;
+  width:100%;
+  height: 50vh;
+  background-color: rgb(44, 44, 44);
+  justify-content: center;
+  align-items: center;
+}
+
+.qoute-container{
+
+  background-color: rgb(44, 44, 44);
+  transform: scale(.1);
+  animation: disappear 4s linear infinite;
+  animation-delay: calc(3s * var(--i));
+}
+
+@keyframes disappear {
+  0%{
+    opacity: 1;
+    
+  }
+
+  80%{
+    transform: scale(.5);
+    opacity: .5;
+  }
+  
+  100%{
+    transform: scale(.1);
+    opacity: 0;
+    display:none;
+  }
+  
+}
+
+.speaker{
+  font-family: 'Lobster';
+  font-weight: bold;
+  font-size:35px;
+  color:rgb(228, 91, 255);
+}
+
+.qoute{
+  font-family: 'Times New Roman';
+  font-style: italic;
+  font-size:35px;
+  max-width: 250px;
+  color:rgb(35, 189, 163);
+}
