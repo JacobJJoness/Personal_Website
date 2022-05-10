@@ -4,12 +4,17 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    
+  }
+  body{
+    background-image: url("images/35576.jpg");
   }
   
   nav{
     font-family:arial;
     background-color: rgb(39, 38, 38) ;
     height: 80px;
+  
   }
   
   label.logo{
@@ -64,6 +69,9 @@
     background-color:rgb(11, 17, 17);
     margin-top:4px;
     font-weight: 300;
+    width:50%;
+    margin-left:25%;
+    border-radius: 15px;
     font-style: italic;
     font-weight: "bold";
     border-style: outset ;

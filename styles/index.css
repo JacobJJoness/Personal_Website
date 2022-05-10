@@ -4,21 +4,25 @@
 
 .about-me-image{
   position:relative;
- 
 
+  border:6px outset rgb(35, 189, 163);
+  border-radius: 50px;
   width:100%;
   max-width:400px;
   height: 387px;
 }
 
 .about-me-div{
+  margin-left:5%;
   margin-top: 2px;
   position:relative;
-  width:100%;
+  width:90%;
+  border: 5px outset rgb(228, 50, 255);
+  border-radius:50px;
   
  
   background-color:rgb(19, 18, 18);
-  height: 450px;
+  height: 500px;
 }
 
 .about-me-text{
@@ -33,9 +37,12 @@
 }
 
 .image-box{
+  background-color: rgb(35, 189, 163);
+  margin-left:3%;
   position:relative;
-  border: 7px outset rgb(35, 189, 163);
-  border-radius: 4px;
+  border: 7px rgb(35, 189, 163);
+  border-style:ridge;
+  border-radius: 70px;
   width:35%;
   max-width:400px;
   height: 400px;
@@ -47,39 +54,39 @@
 /* attempt at appearing and disappearing qoutes */
 
 .rotating-qoutes{
-  display:flex;
-  margin: 0;
+  margin-top:40px;
+  margin-bottom:40px;
   padding: 0;
   width:100%;
-  height: 50vh;
+  height: 700px;
   background-color: rgb(44, 44, 44);
   justify-content: center;
   align-items: center;
 }
 
 .qoute-container{
-
+  padding-top: 40px;
+  align-items: center;
+  text-align: center;
   background-color: rgb(44, 44, 44);
-  transform: scale(.1);
-  animation: disappear 4s linear infinite;
-  animation-delay: calc(3s * var(--i));
+  animation: disappear 7s linear infinite;
+  height: 200px;
 }
 
 @keyframes disappear {
   0%{
-    opacity: 1;
+    opacity: 0;
     
   }
 
-  80%{
-    transform: scale(.5);
-    opacity: .5;
+  50%{
+    opacity: 1;
   }
   
   100%{
-    transform: scale(.1);
+
     opacity: 0;
-    display:none;
+  
   }
   
 }
@@ -92,9 +99,9 @@
 }
 
 .qoute{
+  
   font-family: 'Times New Roman';
   font-style: italic;
-  font-size:35px;
-  max-width: 250px;
+  font-size:50px;
   color:rgb(35, 189, 163);
 }
