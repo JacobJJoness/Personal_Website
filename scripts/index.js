@@ -37,7 +37,7 @@ function switchQoute(i){
                 speakerEl.innerHTML = "-  Jim Rohn";
             }
            
-        }, 7000 * i);
+        }, 9000 * i);
 
 }
 
