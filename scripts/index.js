@@ -47,3 +47,37 @@ function switchQoute(i){
 }
 
 
+//image carosel script
+
+let image = document.getElementById("image-carosel")
+
+for(let i =0; i < 100; i++){
+
+    image.addEventListener("webkitanimationend",switchImage(i));
+    
+}
+
+
+function switchImage(i){
+    setTimeout(function()
+        {
+            if(i % 4 == 0)
+            {
+                document.getElementById("image-carosel").src="images/headshot.png";
+               
+            }
+            else if(i  % 4 == 1)
+            {
+                document.getElementById("image-carosel").src="images/one.jpeg";
+
+            }
+            else if(i % 4 ==2){
+                document.getElementById("image-carosel").src="images/two.jpeg";
+            }
+            else{
+                document.getElementById("image-carosel").src="images/three.jpeg";
+            }
+           
+        }, 10000 * i);
+
+}

@@ -168,3 +168,12 @@
     width:100%;
   }
   
+
+
+
+
+  /* back to top buttons */
+  .back-to-top{
+    padding:5px;
+    background-color:rgb(39, 38, 38);
+  }
