@@ -16,6 +16,11 @@ let count = 0;
 //textBox.addEventListener("animationstart", switchQoute());
 
 
+for(let i =0; i < 80; i++){
+
+    textBox.addEventListener("webkitanimationend",switchQoute(i));
+    
+}
 
 function switchQoute(i){
     setTimeout(function()
@@ -41,8 +46,4 @@ function switchQoute(i){
 
 }
 
-for(let i =0; i < 80; i++){
 
-    textBox.addEventListener("webkitanimationend",switchQoute(i));
-    
-}
