@@ -11,8 +11,9 @@
   }
  
   body {
-    background-image: url("images/one.jpeg");
     background-color: rgb(24, 23, 23);
+    background-image: url("../images/final-synth.jpg");
+    
   }
   nav{
     font-family:arial;
