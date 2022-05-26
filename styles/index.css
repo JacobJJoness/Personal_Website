@@ -93,6 +93,7 @@ h2{
   padding-bottom: 100px;
 }
 
+/* the three main homepage boxes*/
 .homepage-layout .home-boxes{
   margin: 40px;
   width:300px;
@@ -150,6 +151,7 @@ h2{
   position:relative;
   display:flex;
   margin:0;
+  justify-content: center;
   padding:0;
   margin-top:200px;
   width:100%;
@@ -159,14 +161,54 @@ h2{
   animation: fancyglow 4s  2s linear infinite;
 }
 
+
+/* rotating images on about me*/
 .about-me-image{
-  top:1%;
-  left:1%;
+  top:6%;
+  left:3%;
   position: absolute;
-  width:450px;
-  height:400px;
+  width:30%;
+  height:60%;
   border-radius: 35px;
-  animation: fade-out 10s linear infinite;
+  transition: .33s;
+  animation: fade-out 8s linear infinite;
+}
+
+
+.about-me-image:hover{
+  transform: scale(1.2);
+}
+
+/*text attached to each rotating image*/
+.carosel-texts{
+  font-family: bold;
+  position:absolute;
+  font-size: 30px;
+  left:4%;
+  top:58%;
+  color:rgb(35, 189, 163);
+  animation: fade-out 8s linear infinite;
+}
+
+
+
+/* this is the back to top button*/
+.back-to-top{
+  position: absolute;
+  top: 95%;
+  left:50%;
+  
+  align-items: center;
+  background-color: rgb(39, 38, 38);
+  border-radius: 8px;
+  color: rgb(228, 50, 255);
+  transition: .18s;
+
+}
+
+.back-to-top:hover{
+  box-shadow:0px 0px 15px rgba(35, 189, 163,.9);
+  color:rgb(35, 189, 163);
 }
 
 @keyframes fade-out {
@@ -185,6 +227,8 @@ h2{
   }
 }
 
+
+/* headers like "about me", etc */
 .homepage-header{
   font-family: 'Lobster';
   position: absolute;
@@ -192,3 +236,14 @@ h2{
   top:2%;
   font-size: 50px;
 }
+.homepage-texts{
+  position: absolute;
+  left:40%;
+  color:rgb(35, 189, 163);
+  top:12%;
+  font-size: 30px;
+  right:3%;
+  bottom:1%;
+
+}
+

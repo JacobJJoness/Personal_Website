@@ -50,6 +50,7 @@ function switchQoute(i){
 //image carosel script
 
 let image = document.getElementById("image-carosel")
+let text = document.getElementById("carosel-words")
 
 for(let i =0; i < 100; i++){
 
@@ -63,21 +64,27 @@ function switchImage(i){
         {
             if(i % 4 == 0)
             {
-                document.getElementById("image-carosel").src="images/headshot.png";
+               image.src="images/headshot.png";
+               text.innerHTML= "Headshot";
                
             }
             else if(i  % 4 == 1)
             {
-                document.getElementById("image-carosel").src="images/one.jpeg";
+                image.src="images/one.jpeg";
+                text.innerHTML= "43 inch Black Drum";
 
             }
             else if(i % 4 ==2){
-                document.getElementById("image-carosel").src="images/two.jpeg";
+                image.src="images/two.jpeg";
+                text.innerHTML="47 inch Spinner Shark"
             }
             else{
-                document.getElementById("image-carosel").src="images/three.jpeg";
+                image.src="images/three.jpeg";
+                text.innerHTML="A piece of the Berlin wall"
             }
            
-        }, 10000 * i);
+        }, 8030 * i);
 
 }
+
+//image carosel ro

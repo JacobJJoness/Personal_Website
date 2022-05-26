@@ -44,3 +44,86 @@
     width: 99.2%;
     
   }
+/* new resume below*/
+
+  .custom-resume{
+    font-family: 'Times New Roman';
+    display: grid;
+    grid-template-columns:  250px, 300px, 120px, 900px;
+    grid-template-rows: 250px, 300px, 120px, 900px;
+    position: relative;
+    width:80%;
+    margin-left: 10%;
+    margin-right:10%;
+    height:1600px;
+    color: rgb(82, 255, 226);
+    background-color: rgba(0,0,0,.6);
+
+  }
+  .resume-header{
+    font-weight:bold;
+    position: absolute;
+    font-size: 55px;
+    left:46%;
+
+  }
+
+ 
+  .resume-text{
+    position: absolute;
+    font-size: 30px;
+    margin-top:3%;
+    width:60%;
+    left:30%;
+    top:8%;
+  }
+
+  .resume-container{
+    position: relative;
+    color:rgb(82, 255, 226);
+    width:100%;
+  
+  }
+  .secondary-header{
+    text-decoration: underline;
+    text-decoration-color: rgb(228, 91, 255);
+    position:absolute;
+    left:10%;
+    font-size: 40px;
+    text-align:left;
+    
+  }
+  .list-text{
+    position: absolute;
+    left: 14%;
+    top:20%;
+    font-size: 32px;
+  }
+
+  .list-spacing{
+    margin-bottom:2%;
+  }
+
+  .school-name-text{
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    top:17%;
+    left:10%;
+    
+  }
+
+  .school-italics{
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    top:26%;
+    left:10%;
+  }
+
+  .education-list-text{
+    position: absolute;
+    left: 14%;
+    top:43%;
+    font-size: 32px;
+  }
