@@ -147,6 +147,7 @@ h2{
 /* main containers of homepage*/
 
 .main-container{
+  overflow:auto;
   position:relative;
   display:flex;
   margin:0;
@@ -195,7 +196,7 @@ h2{
 .back-to-top{
   position: absolute;
   top: 95%;
-  left:50%;
+  left:5%;
   
   align-items: center;
   background-color: rgb(39, 38, 38);
@@ -246,3 +247,6 @@ h2{
 
 }
 
+.list-spacing{
+  margin-top:18px;
+}

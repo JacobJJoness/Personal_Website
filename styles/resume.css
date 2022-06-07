@@ -51,6 +51,7 @@
     color: rgb(82, 255, 226);
     background-color: rgba(0,0,0,.6);
 
+
   }
   .resume-header{
     font-weight:bold;
@@ -88,7 +89,7 @@
   .list-text{
     position: absolute;
     left: 14%;
-    top:20%;
+    top:49%;
     font-size: 28px;
   }
 
@@ -167,3 +168,74 @@
     top:8%;
     left:10%;
   }
+
+  /* code for rotating images on skills section*/
+
+  .rotating-icons-container{
+    
+    position: relative;
+    left: 15%;
+    right:15%;
+    top:15%;
+    width:70%;
+    height: 100px;
+    border-radius: 80px;
+    
+    
+    
+  }
+
+  .icon-image-container{
+    opacity:0;
+    position: absolute;
+    animation: shifter 10s linear infinite;
+    animation-delay: calc(var(--i)*.75s);
+    width:90px;
+    height: 100px;
+    
+    
+  }
+  .icon-image-style{
+    position: absolute;
+    top:15%;
+    left:50%;
+    width:60px;
+    height:55px;
+  }
+
+
+  @keyframes shifter{
+    0%{
+      left:5%;
+      transform:scale(.8);
+      opacity:0
+    }
+    10%{
+      transform: scale(1.4);
+    }
+    40%{
+      transform: scale(1.4);
+      opacity: 1;
+    }
+    50%{
+      transform:scale(.8);
+      left:95%;
+      opacity: 0.0;
+    }
+    95%{
+      left:0%;
+      opacity:0;
+    }
+    100%{
+      left:0%;
+      opacity: 0;
+
+  }
+}
+
+.icon-text{
+  position: absolute;
+  font-size: 15px;
+  top:90%;
+  left:65%;
+}
