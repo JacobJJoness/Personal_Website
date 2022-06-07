@@ -1,3 +1,12 @@
+
+.download-box{
+  margin:40px;
+  
+}
+
+
+
+
 .download-text{
     text-align: center;
     font-weight: bold;
@@ -26,36 +35,19 @@
     box-shadow: 6px 8px 8px rgba(82, 255, 226, 0.6);
   }
 
-  .resume-div{
-    position:relative;
-    align-items: center;
-    margin-left:10%;
-    margin-right:10%;
-    width:80%;
-    background-color:rgb(228, 100, 255) ;
-    border: 7px outset rgb(35, 189, 163);
-  
-  }
-  
-  .resume-img{
-    margin-left:4px;
-    margin-top:4px;
-    color:rgb(35, 189, 163);
-    width: 99.2%;
-    
-  }
 /* new resume below*/
 
   .custom-resume{
+    overflow: hidden ;
+    border-radius:40px;
     font-family: 'Times New Roman';
     display: grid;
-    grid-template-columns:  250px, 300px, 120px, 900px;
-    grid-template-rows: 250px, 300px, 120px, 900px;
+    grid-template-rows: 400px 400px 400px 1fr;
     position: relative;
     width:80%;
     margin-left: 10%;
     margin-right:10%;
-    height:1600px;
+    height:2800px;
     color: rgb(82, 255, 226);
     background-color: rgba(0,0,0,.6);
 
@@ -97,13 +89,38 @@
     position: absolute;
     left: 14%;
     top:20%;
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .list-spacing{
     margin-bottom:2%;
   }
 
+  .school-name-text{
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    top:17%;
+    left:10%;
+    
+  }
+
+
+  .experience-data-text{
+    font-weight: bold;
+    font-size: 28px;
+    position: absolute;
+    top:5%;
+    left:50%;
+  }
+
+  .experience-postion-text{
+    font-weight: bold;
+    font-size: 28px;
+    position: absolute;
+    top:5%;
+    left:10%;
+  }
   .school-name-text{
     font-weight: bold;
     font-size: 30px;
@@ -125,5 +142,28 @@
     position: absolute;
     left: 14%;
     top:43%;
-    font-size: 32px;
+    font-size: 28px;
+  }
+
+
+  .experience-role-text{
+    position: absolute;
+    left: 14%;
+    top:14%;
+    font-size: 28px;
+    margin-bottom:5%;
+  }
+
+  .experience-list-text{
+    position: absolute;
+    left: 14%;
+    top:17%;
+    font-size: 28px;
+  }
+  .experience-school-italics{
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    top:8%;
+    left:10%;
   }
