@@ -1,31 +1,85 @@
 
 .download-box{
-  margin:40px;
+  height:60px;
+  position: relative;
+  margin:2%;
+  margin-left:10%;
+  width:80%;
   
 }
 
 
+.anchor-container{
+  position:absolute;
+  animation: runaway 20s linear infinite;
+  width:15%;
+}
 
 
-.download-text{
-    text-align: center;
-    font-weight: bold;
-    padding:10px;
-    width:100%;
-    font-size: 18px;
-  }
   .download-style{
+    position:absolute;
     color: rgb(228, 100, 255);
-    background-color:rgb(49, 49, 49); 
+    background-color:rgb(0,0,0); 
     padding:5px;
     border: 2px outset rgb(35, 189, 163);
     border-radius: 5px;
+    
+    animation: fancyglow 10s linear infinite;
+    
+
+  }
+  @keyframes runaway{
+    0%{
+      top:100%;
+      left:0%
+    }
+    10%{
+      top:0%;
+      left:17%;
+    }
+    20%{
+      top:100%;
+      left:34%;
+    }
+    30%{
+      top:0%;
+      left:51%;
+    }
+    40%{
+      top:100%;
+      left:68%;
+    }
+    50%{
+      top:0%;
+      left:85%;
+    }
+    60%{
+      top:100%;
+      left:68%;
+    }
+    70%{
+      top:0%;
+      left:51%;
+    }
+    80%{
+      top:100%;
+      left:34%;
+    }
+    90%{
+      top:0%;
+      left:17%;
+    }
+    100%{
+      top:100%;
+      left:0%;
+    }
+    
   }
   
   .download-style:hover{
     background-color:rgb(22, 22, 22);
     color: rgb(228, 91, 255);
-    box-shadow: 6px 8px 8px rgba(35, 189, 163, 0.6)
+    box-shadow: 6px 8px 8px rgba(35, 189, 163, 0.6);
   }
   
   
@@ -45,6 +99,7 @@
     grid-template-rows: 400px 400px 400px 1fr;
     position: relative;
     width:80%;
+    margin-top: 40px;;
     margin-left: 10%;
     margin-right:10%;
     height:2800px;
@@ -188,7 +243,7 @@
   .icon-image-container{
     opacity:0;
     position: absolute;
-    animation: shifter 10s linear infinite;
+    animation: shifter 8s linear infinite;
     animation-delay: calc(var(--i)*.75s);
     width:90px;
     height: 100px;
@@ -217,7 +272,7 @@
       transform: scale(1.4);
       opacity: 1;
     }
-    50%{
+    70%{
       transform:scale(.8);
       left:95%;
       opacity: 0.0;
@@ -236,6 +291,7 @@
 .icon-text{
   position: absolute;
   font-size: 15px;
+  color:rgb(228, 91, 255);
   top:90%;
   left:65%;
 }
