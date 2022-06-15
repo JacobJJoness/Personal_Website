@@ -43,4 +43,43 @@
 
 .message{
   font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.contact-info{
+  margin:20px;
+  animation: colorshift 10s linear infinite;
+}
+
+@keyframes colorshift {
+ 
+  20%{
+    color: rgb(228, 50, 255);
+  }
+  50%{
+    color: rgb(36, 189, 163);
+  }
+  51%{
+    color: rgb(255,255,255);
+    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, .8);
+  }
+  55%{
+    color: rgb(228, 50, 255);
+    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255,0);
+  }
+  75%{
+    color: rgb(36, 189, 163);
+  }
+  76%{
+    color: rgb(255,255,255);
+    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, .8);
+  }
+  80%{
+    color: rgb(228, 50, 255);
+    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255,0);
+  }
+  100%{
+    color: rgb(36, 189, 163);
+  }
+ 
 }
