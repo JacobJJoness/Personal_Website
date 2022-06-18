@@ -158,7 +158,7 @@ h2{
   height: 900px;
   background-color: black;
   border-radius: 20px;
-  animation: fancyglow 4s  2s linear infinite;
+  animation: fancyglow 4s linear infinite;
 }
 
 
@@ -249,4 +249,25 @@ h2{
 
 .list-spacing{
   margin-top:18px;
+}
+
+/* Short message container code below */
+
+.short-message-header{
+  top:5%;
+  font-family: 'Lobster';
+  position: absolute;
+  font-size: 50px;
+  color: rgb(228, 91, 255);
+  justify-self: center;
+}
+
+.short-message-text{
+  left:10%;
+  right:10%;
+  position: absolute;
+  top:20%;
+  font-size: 40px;
+  color:rgb(35, 189, 163);
+  justify-self: center;
 }

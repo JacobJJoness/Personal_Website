@@ -47,43 +47,40 @@ function switchQoute(i){
 }
 
 
-//image carosel script
+//image carosel script for about me section
 
 let image = document.getElementById("image-carosel")
 let text = document.getElementById("carosel-words")
+let firstImages =["images/headshot.png","images/one.jpeg","images/two.jpeg","images/three.jpeg"];
+let firstWords =["Headshot",  "43 inch Black Drum", "47 inch Spinner Shark", "A piece of the Berlin wall"]
 
 for(let i =0; i < 100; i++){
 
-    image.addEventListener("webkitanimationend",switchImage(i));
+    image.addEventListener("webkitanimationend",switchImage(i,text,image,firstImages,firstWords));
+    
+}
+//image carosel script for fun facts page
+let funImage = document.getElementById("fun-image")
+let funText = document.getElementById("fun-carosel")
+
+let funImages =["images/image0.jpeg","images/image1.jpg","images/image2.jpeg","images/image3.jpeg"];
+let funWords =["My Art",  "My Digital Art", "The Computer I built", "My Steak n' Potatoes"]
+
+for(let i =0; i < 100; i++){
+
+    funImage.addEventListener("webkitanimationend",switchImage(i,funText,funImage,funImages,funWords));
     
 }
 
 
-function switchImage(i){
+//qoute to create a carosel
+function switchImage(i,pageText,imageSrc, Images, Words ){
     setTimeout(function()
         {
-            if(i % 4 == 0)
-            {
-               image.src="images/headshot.png";
-               text.innerHTML= "Headshot";
-               
-            }
-            else if(i  % 4 == 1)
-            {
-                image.src="images/one.jpeg";
-                text.innerHTML= "43 inch Black Drum";
-
-            }
-            else if(i % 4 ==2){
-                image.src="images/two.jpeg";
-                text.innerHTML="47 inch Spinner Shark"
-            }
-            else{
-                image.src="images/three.jpeg";
-                text.innerHTML="A piece of the Berlin wall"
-            }
+            imageSrc.src = Images[i%4];
+            pageText.innerHTML = Words[i%4];
            
-        }, 8030 * i);
+        }, 8000 * i);
 
 }
 
