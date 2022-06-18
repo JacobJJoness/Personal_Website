@@ -30,6 +30,7 @@
     font-size:45px;
     line-height: 80px;
     padding: 0 100px;
+    animation: coolTextGlow 10s linear infinite;
   }
   
   nav ul{
@@ -44,7 +45,7 @@
   }
   nav ul li a{
     font-family: 'Lobster';
-    background-color:rgb(39, 38, 38);
+    background-color:rgb(0, 0, 0);
     color:rgb(30, 206, 176);
     font-size:32px;
     padding: 4px 6px;
@@ -65,16 +66,17 @@
     box-shadow: 6px 8px 8px rgba(35, 189, 163, 0.6)
   }
   a.active{
-    background-color:rgb(14, 14, 14);
-    animation: fancyglow 8s linear infinite;
+    color:rgb(245, 159, 231);
+    background-color:rgb(0,0,0);
+    animation: coolTextGlow 8s linear infinite;
     transform: scale(1.1);
   }
 
   @keyframes fancyglow {
     0%{
       box-shadow:0px 0px 15px  20px rgba(228, 50, 255,.9);
-      box-shadow:0px 0px 30px 20px rgba(228, 50, 255,.9);
-      box-shadow:0px 0px 80px 20px rgba(228, 50, 255,.9);
+      box-shadow:0px 0px 30px  rgba(228, 50, 255,.9);
+      box-shadow:0px 0px 80px rgba(228, 50, 255,.9);
     }
     25%{
       box-shadow:0px 0px 15px 10px rgba(35, 189, 163,.9);
@@ -96,8 +98,10 @@
       box-shadow:0px 0px 15px 10px rgba(228, 50, 255,.9);
       box-shadow:0px 0px 30px 10px rgba(228, 50, 255,.9);
       box-shadow:0px 0px 80px 10px rgba(228, 50, 255,.9);
+    
       }
   }
+
 
   
   .title-text{
@@ -137,6 +141,25 @@
     border-bottom-color:  rgb(228, 50, 255); 
     animation: colorshift 8s linear infinite;
   }
+
+
+
+
+  .main-image-div h1{
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    font-size: 80px;
+    color:rgb(36, 189, 163);
+    font-family: 'Lobster';
+    animation: flipper 8s linear infinite;
+  }
+
+
+
+
+
+
   @keyframes colorshift {
     33%{
       border-left-color:  rgb(228, 50, 255); 
@@ -153,16 +176,6 @@
     
   }
   
-  .main-image-text{
-      text-decoration: underline;
-      text-decoration-color: rgba(228, 100, 255, .8);
-      color:rgb(35, 189, 163);
-      position: absolute;
-      top: 20%;
-      left: 45%;
-      font-size: 70px;
-      font-family: 'Lobster';
-  }
   
   .main-image-style{
     opacity:0.7;
@@ -177,11 +190,48 @@
   /* back to top buttons */
   .back-to-top{
     padding:5px;
-    background-color:rgb(39, 38, 38);
+    background-color:rgb(0,0,0);
   }
 
-  .fun-fact-style{
-    
-  }
 
-  
+
+
+  @keyframes coolTextGlow{
+    0%{
+       
+      text-shadow:0px 0px 15px rgb(228, 50, 255),
+                  0px 0px 30px rgb(228, 50, 255),
+                  0px 0px 45px rgb(228, 50, 255),
+                  0px 0px 60px rgb(228, 50, 255),
+                  0px 0px 75px rgb(228, 50, 255);
+    }
+    25%{
+      text-shadow:0px 0px 15px rgba(35, 189, 163,.9),
+      0px 0px 30px rgba(35, 189, 163,.9),
+      0px 0px 45px rgba(35, 189, 163,.9);
+    } 
+    50%{
+      text-shadow:0px 0px 15px rgb(228, 50, 255),
+                  0px 0px 30px rgb(228, 50, 255),
+                  0px 0px 45px rgb(228, 50, 255);
+                 
+    }
+    75%
+    {
+      text-shadow: 0px 0px 15px rgba(35, 189, 163,.9),
+      0px 0px 30px rgba(35, 189, 163,.9),
+      0px 0px 45px rgba(35, 189, 163,.9);
+    } 
+    100%{
+      text-shadow:0px 0px 15px rgb(228, 50, 255),
+                  0px 0px 30px rgb(228, 50, 255),
+                  0px 0px 45px rgb(228, 50, 255),
+                  0px 0px 60px rgb(228, 50, 255),
+                  0px 0px 75px rgb(228, 50, 255);
+    }
+  }
+  @keyframes flipper {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
