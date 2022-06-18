@@ -10,7 +10,7 @@
   background-color: rgba(0,0,0,.6);
   margin:50px;
   border-radius: 50px;
-
+  
   
 }
 
@@ -31,6 +31,7 @@
     right:10%;
     top:10%;
     font-size:30px;
+   
     
   }
   
@@ -46,14 +47,17 @@
   margin-bottom: 40px;
 }
 
-.contact-info{
-  margin:20px;
-  animation: colorshift 10s linear infinite;
+.bold-style{
+  animation: colorShift 8s  infinite running;
+  color:rgb(36, 189, 163);
+  text-decoration: underline;
+  text-decoration-color: rgb(228, 50, 255);
 }
 
-@keyframes colorshift {
+@keyframes colorShift {
  
   20%{
+    
     color: rgb(228, 50, 255);
   }
   50%{
@@ -61,22 +65,22 @@
   }
   51%{
     color: rgb(255,255,255);
-    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, .8);
+    
   }
   55%{
     color: rgb(228, 50, 255);
-    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255,0);
+   
   }
   75%{
     color: rgb(36, 189, 163);
   }
   76%{
     color: rgb(255,255,255);
-    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, .8);
+  
   }
   80%{
     color: rgb(228, 50, 255);
-    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255,0);
+ 
   }
   100%{
     color: rgb(36, 189, 163);
