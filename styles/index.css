@@ -174,7 +174,7 @@ h2{
   align-items: center;
   background-color: rgb(39, 38, 38);
   border-radius: 8px;
-  color: rgb(228, 50, 255);
+  color: rgb(228, 91, 255);
   transition: .18s;
 
 }
@@ -204,7 +204,7 @@ h2{
 /* headers like "about me", etc */
 .homepage-header{
   font-family: 'Lobster';
-  color:rgb(245, 233, 244);
+  color:rgb(228, 91, 255);
   position: absolute;
   left:65%;
   top:2%;
