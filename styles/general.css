@@ -152,7 +152,7 @@
     font-size: 80px;
     color:rgb(36, 189, 163);
     font-family: 'Lobster';
-    animation: flipper 8s linear infinite;
+    animation: flipper 6s ease-in-out infinite;
   }
 
 

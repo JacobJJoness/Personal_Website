@@ -50,8 +50,8 @@
 .bold-style{
   animation: colorShift 8s  infinite running;
   color:rgb(36, 189, 163);
-  text-decoration: underline;
-  text-decoration-color: rgb(228, 50, 255);
+
+
 }
 
 @keyframes colorShift {
