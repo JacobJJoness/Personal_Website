@@ -142,9 +142,10 @@ h2{
   position: absolute;
   width:30%;
   height:60%;
-  border-radius: 35px;
   transition: .33s;
+  border-radius: 50px;
   animation: fade-out 8s linear infinite;
+  
 }
 
 
@@ -158,7 +159,7 @@ h2{
   position:absolute;
   font-size: 30px;
   left:4%;
-  top:58%;
+  top:68%;
   color:rgb(35, 189, 163);
   animation: fade-out 8s linear infinite;
 }

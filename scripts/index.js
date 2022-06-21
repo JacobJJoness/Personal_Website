@@ -52,7 +52,7 @@ function switchQoute(i){
 let image = document.getElementById("image-carosel");
 let text = document.getElementById("carosel-words");
 let firstImages =["images/headshot.png","images/one.jpeg","images/two.jpeg","images/three.jpeg"];
-let firstWords =["Headshot",  "43 inch Black Drum", "47 inch Spinner Shark", "A piece of the Berlin wall"];
+let firstWords =["Thats Me!",  "Black Drum", "Spinner Shark", "A piece of the Berlin wall"];
 
 for(let i =0; i < 100; i++){
 
@@ -79,6 +79,7 @@ function switchImage(i,pageText,imageSrc, Images, Words ){
         {
             imageSrc.src = Images[i%4];
             pageText.innerHTML = Words[i%4];
+        
            
         }, 8000 * i);
 

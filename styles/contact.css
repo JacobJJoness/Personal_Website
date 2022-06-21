@@ -50,8 +50,6 @@
 .bold-style{
   animation: colorShift 8s  infinite running;
   color:rgb(36, 189, 163);
-
-
 }
 
 @keyframes colorShift {
