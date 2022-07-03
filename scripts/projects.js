@@ -42,7 +42,9 @@ async function getData(){
 //chart()
 //we await getData, and set it to a data object
 // we then grab our item(canvas) to insert the chart
-// we
+// now is when we start using the chart.js notation for our chart.
+// essentially we use the data object to distribute correct data
+// all over the chart.
 async function chart(){
     let data = await getData();
     const ctx = document.getElementById('myChart').getContext('2d');
