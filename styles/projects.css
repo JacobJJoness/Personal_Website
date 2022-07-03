@@ -1,12 +1,19 @@
+.body{
+    margin:0;
+    padding:0;
+}
+
+
+
 .layout{
-    min-height: 100vh;
+    
     display: grid;
-    margin-top: 40px;
+    margin-top: 2.5rem;
     justify-content: center;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 200px 200px 200px;
-    column-gap:20px;
-    row-gap: 30px;
+    grid-template-columns: 19rem 19rem 19rem;
+    grid-template-rows: 13rem 13rem 13rem;
+    column-gap:1.25rem;
+    row-gap: 1.25rem;
     
 }
 
@@ -39,6 +46,70 @@
     margin-top:25px;
     margin-left:95px;
     width:110px;
-    height: auto;
+    
     align-items: center;
+}
+
+
+
+
+.note-text{
+    color:rgb(35, 189, 163);
+    text-align:center;
+}
+
+.projects-container{
+    position:relative;
+    display:flex;
+    width:80%;
+    margin-left:10%;
+    justify-content: center;
+    align-items: center;
+    height:100rem;
+    background-color: rgba(10,10,10,.8);
+    overflow: auto;
+    
+    
+}
+.project-header{
+    position: absolute;
+    font-size:3rem;
+    color:rgb(228, 100, 255);
+    top:5%;
+    margin-bottom:1rem;
+}
+.chart-container{
+    width:50%;
+    position:absolute;
+    align-self: center;
+    width:90%;
+    top:10%;
+    
+}
+
+
+.-header{
+    position: absolute;
+    font-size:2.5rem;
+    color:rgb(228, 100, 255);
+    top:60%;
+}
+.chart-text{
+    position: absolute;
+    font-size:1.8rem;
+    
+    max-width: 100rem;
+    color:rgb(35, 189, 163);
+    top:68%;
+}
+.chart-breakdown{
+    position: absolute;
+    font-size:1.8rem;
+    margin:5%;
+
+    color:rgb(35, 189, 163);
+    top:75%;
+}
+.chart-facts{
+    margin:1.5rem;
 }

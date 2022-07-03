@@ -9,6 +9,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src = "https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <title>
       Jacobs Lounge
@@ -75,12 +76,34 @@
     </div>
 
   </div>
+  <p class="note-text"> <b>Note:</b> Projects Page, and some other pages of this site are still a work in progress</p>
+  <div class="projects-container">
+    <h2 class="project-header">Annual Surface Temperature Averages Since 1880 </h2>
+
+    <div class ="chart-container">
+    <canvas id="myChart" ></canvas>
+    </div>    
+    <h3 class = "chart-header">Data Report Breakdown</h3>
+    <p class="chart-text">This project takes raw data, in the form of a csv file, and utilizes the chart.js library to display data
+      in a more useful format. While the project is fairly small I do see very valuable point to be made. The small set of data
+      I pulled from still manages to reflect certain facts, and prove really powerful. See below. </p>
+    <ul class="chart-breakdown">
+      <li class="chart-facts">&#8226; Between 1940-1946 (World War II) there is a sudden dramatic increase in temperature. 
+      </li>
+      <li class="chart-facts">&#8226; The dramatic increase in temperature since 1970, also reflects the growth of the 
+        Global Economy. 
+      </li>
+      <li class="chart-facts">&#8226; Before the industrial revolution we can see a regular pattern of warm and cold fluctuations.
+      </li>
+    </ul>
+  </div>
   
   
 
 
   <!-- at bottom due as good practice-->
-  <script></script>
+  <script src="scripts/projects.js"></script>
+  
 </body>
 
 </html>
