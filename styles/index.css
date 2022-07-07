@@ -2,17 +2,27 @@
     
 /* declines all defaulted padding, and margins needs an override though*/ 
 
-/* */
+/*______________REFERENCE_________________
+LARGE CONTAINER: this is a starting container for a major element on the page.
 
 
-/* attempt at appearing and disappearing qoutes */
 
+
+
+
+
+*/
+
+
+
+
+/* ------------------LARGE CONTAINER---------------*/
 .rotating-qoutes{
   position:relative;
+  overflow:clip;
   padding: 0;
   margin:10%;
   width:80%;
-  
   height:20rem;
   background-color: rgb(0, 0, 0);
   justify-content: center;
@@ -86,32 +96,35 @@
 
 
 /* main homepage buttons below*/
-
+/* ------------------LARGE CONTAINER---------------*/
 .homepage-layout{
-  margin:15rem;
+  width:100%;
   color:rgb(35, 189, 163);
   display:flex;
+  position: relative;
   align-items:center;
   justify-content: space-between;
-  padding: 3rem;
+ 
 }
 
 /* the three main homepage boxes*/
 .homepage-layout .home-boxes{
-  margin: 2.5rem;
+  
+  display:flex;
+  justify-content: center;
   width:20rem;
+  height:auto;
+  margin:auto;
+ 
+  border-radius: 2rem;
+  transition: 2s;
   color:rgb(35, 189, 163);
-  height:200px;
   font-family: 'Lobster';
   font-size: 3rem;
   background-color: black;
-  text-align: center;
-  padding:70px 10px;
-  border-radius: 2rem;
-  transition: 2s;
   animation: fancyglow 8s linear infinite;
   animation-delay: calc(var(--i)*.75s);
-
+  
 }
 
 .homepage-layout .home-boxes:hover{
@@ -122,20 +135,21 @@
 
 /* main containers of homepage*/
 
+/* ------------------LARGE CONTAINER---------------*/
 .main-container{
   overflow:auto;
   position:relative;
   display:flex;
   margin:0;
-  justify-content: center;
+ 
   padding:0;
   margin-top:200px;
   width:80%;
   margin-left:10%;
-  height: 900px;
-  background-color: black;
+  height: 46rem;
+  background-color: rgba(0,0,0,.6);
   border-radius: 20px;
-  animation: fancyglow 4s linear infinite;
+  
 }
 
 
@@ -213,7 +227,7 @@
   position: absolute;
   left:65%;
   top:2%;
-  font-size: 50px;
+  font-size: 3rem;
   animation: coolTextGLow 8s linear infinite;
 }
 
@@ -260,7 +274,7 @@
 
 @keyframes coolTextGlow{
   0%{
-     
+  
     text-shadow:0px 0px 15px rgba(228, 50, 255,1);
     text-shadow:0px 0px 30px rgba(228, 50, 255,1);
     text-shadow:0px 0px 45px rgba(228, 50, 255,.9);
@@ -323,4 +337,82 @@
     box-shadow:0px 0px 30px rgba(228, 50, 255,.9);
     box-shadow:0px 0px 45px rgba(228, 50, 255,.9);
   }
+}
+
+@media (max-width:1000px){
+  .rotating-qoutes{
+    height:15rem;
+  }
+  .qoute-container{
+    height:auto;
+  }
+  
+  .qoute{
+    font-size: 1.5rem;
+  }
+  .speaker{
+    font-size:1rem;
+    
+  }
+  .homepage-layout .home-boxes{
+    font-size: 2rem;
+    width:15rem;
+  }
+  .main-container{
+    width:100%;
+    margin-top:2rem;
+    margin-bottom:2rem;
+    margin-left:0;
+  }
+
+  .homepage-header{
+    
+    left:50%;
+    transform: translateX(-50%);
+    top:2%;
+    font-size: 2rem;
+    padding:.5rem;
+    animation: coolTextGLow 8s linear infinite;
+  }
+  
+  .homepage-texts{
+    position: absolute;
+    width:80%;
+    transform:translate(-50%,-50%);
+    color:rgb(35, 189, 163);
+    top:60%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size: 1rem;
+    
+    right:3%;
+    bottom:1%;
+  
+  }
+  .carosel-texts{
+    font-family: bold;
+    position:absolute;
+    font-size: 1rem;
+    left:4%;
+    top:30%;
+    color:rgb(35, 189, 163);
+    animation: fade-out 8s linear infinite;
+  }
+  .about-me-image{
+    top:8%;
+    left:30%;
+    position: absolute;
+    width:40%;
+    height:30%;
+    transition: .33s;
+    border-radius: 50px;
+    animation: fade-out 8s linear infinite;
+    
+  }
+  .back-to-top{
+    display:none;
+  }
+
+  
+  
 }

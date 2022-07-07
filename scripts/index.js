@@ -85,4 +85,8 @@ function switchImage(i,pageText,imageSrc, Images, Words ){
 
 }
 
-//image carosel ro
+// function startUp(){
+//     document.getElementById("aboutBut").style.left = "10%";
+//     document.getElementById("funBut").style.left = "50%";
+//     document.getElementById("messBut").style.left ="90%";
+// }
