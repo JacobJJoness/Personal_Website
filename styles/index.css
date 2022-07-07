@@ -255,9 +255,11 @@ LARGE CONTAINER: this is a starting container for a major element on the page.
 
 .short-message-header{
   top:5%;
+  left:50%;
+  transform: translate(-50%,-50%);
   font-family: 'Lobster';
   position: absolute;
-  font-size: 50px;
+  font-size: 3rem;
   color: rgb(228, 91, 255);
   justify-self: center;
 }
@@ -267,7 +269,7 @@ LARGE CONTAINER: this is a starting container for a major element on the page.
   right:10%;
   position: absolute;
   top:20%;
-  font-size: 40px;
+  font-size: 2.5rem;
   color:rgb(35, 189, 163);
   justify-self: center;
 }
@@ -414,6 +416,19 @@ LARGE CONTAINER: this is a starting container for a major element on the page.
   .back-to-top{
     display:none;
   }
+  .short-message-header{
+
+    font-size: 1.5rem;
+
+
+  }
+  
+  .short-message-text{
+   
+    font-size: 1rem;
+  
+  }
+  
 
   
   
