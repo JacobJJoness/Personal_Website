@@ -359,10 +359,12 @@ LARGE CONTAINER: this is a starting container for a major element on the page.
     width:15rem;
   }
   .main-container{
-    width:100%;
+    width:90%;
+    left:5%;
     margin-top:2rem;
-    margin-bottom:2rem;
+    
     margin-left:0;
+    animation: fancyglow 8s linear infinite;
   }
 
   .homepage-header{
