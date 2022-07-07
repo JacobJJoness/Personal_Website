@@ -22,14 +22,21 @@
 <!--<img  src="background_image.jpeg" alt="Coding">-->
 <!-- Everything that is visible on the page will go inside of the body element-->
 <body>
-  <nav>
+  <nav class = "navbar" id = "banner">
     <label class ="logo">Jacob's Lounge</label>
-    <ul>  
-      <li><a  href="index.html">Home</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li><a class="active" href="projects.html">Projects</a></li>
-      <li><a  href="contact.html">Contact</a></li>
-    </ul>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class ="navbar-links">
+      <ul>  
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
   </nav>
   
    
@@ -103,6 +110,8 @@
 
   <!-- at bottom due as good practice-->
   <script src="scripts/projects.js"></script>
+  <script src="scripts/general.js">
+  </script>
   
 </body>
 

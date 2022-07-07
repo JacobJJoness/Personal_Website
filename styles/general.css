@@ -16,7 +16,7 @@
     background-image: url("../images/final-synth.jpg");
     
   }
-  nav{
+  .navbar{
     font-family:arial;
     display:flex;
     justify-content: space-between;
@@ -35,16 +35,16 @@
     animation: coolTextGlow 10s linear infinite;
   }
   
-  nav ul{ 
+  .navbar-links ul{ 
     margin:0;
     padding:0;
     display:flex;
   }
   
-  nav ul li{
+  .navbar-links li{
     list-style:none;
   }
-  nav ul li a{
+  .navbar-links li a{
     font-family: 'Lobster';
     display:block;
     background-color:rgb(0, 0, 0);
@@ -108,19 +108,20 @@
 
   .toggle-button{
     position:absolute;
-    top: .75rem;
-    right:1rem;
+    top: 1rem;
+    right:1.25rem;
     display:none;
     flex-direction:column;
     justify-content:space-between;
-    width:30px;
-    height:21px;
+    width:39px;
+    height:30px;
   }
 
   .toggle-button .bar{
-    height:3px;
+    height:5px;
     width:100%;
     background-color: rgb(35, 189, 163);
+    border-radius: 10px;
   }
   
   
@@ -258,28 +259,39 @@
       display:flex;
     }
 
-    nav ul li{
-      display:none;
-    }
-    nav{
-      flex-direction: column;
-      align-items: flex-start;
+    .navbar-links{
+      display: none;
       width:100%;
     }
 
-    nav ul{
+    .navbar{
       flex-direction:column;
+      align-items:flex-start;
+      margin-bottom:1rem;
+    }
+
+    .navbar-links ul{
+      width:100%;
+      flex-direction: column;
+      margin-bottom:1rem;
+    }
+    .navbar-links li{
+      text-align:center;
       
     }
-   
-    .main-image-div h1{
-      position: absolute;
-      top: 20%;
-      left: 50%;
-      transform: translate(-50%);
-      font-size: 2rem;
-      color:rgb(36, 189, 163);
-      font-family: 'Lobster';
+    .navbar-links li a{
+      font-size:.5rem;
+      
     }
+
+    .navbar-links.active{
+      display:flex;
+     
+    }
+
+    .main-image-div {
+      display:none;
+    }
+
 
   }
