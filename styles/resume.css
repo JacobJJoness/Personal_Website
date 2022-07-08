@@ -130,7 +130,7 @@
   }
 
   .resume-container{
-    margin:5%;
+    margin:4rem;
     position: relative;
     right:5%;
     bottom:5%;
@@ -163,9 +163,9 @@
 
   .school-name-text{
     font-weight: bold;
-    font-size: 30px;
+    font-size: 2rem;
     position: absolute;
-    top:17%;
+    top:21%;
     left:10%;
     
   }
@@ -309,3 +309,21 @@
   top:90%;
   left:65%;
 }
+
+@media (max-width:1000px){
+  
+  .custom-resume{
+    
+    width:95%;
+    margin-top: 2.5rem;
+    margin-left: 2.5%;
+    margin-right:0%;
+    
+
+
+  }
+  .resume-header{
+    font-size:1.5rem;
+  }
+}
+  
